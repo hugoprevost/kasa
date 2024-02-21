@@ -1,11 +1,9 @@
-// import logo from '../../assets/logo.svg';
+import Location from '../../components/Location'
 
-function App() {
+function Home() {
   return (
-    <div>
-      <h1>Home 🧮</h1>
-    </div>
+     <Location/>
   );
 }
 
-export default App;
+export default Home;
