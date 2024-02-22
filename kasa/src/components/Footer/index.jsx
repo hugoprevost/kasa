@@ -1,9 +1,36 @@
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import LogoWhite from '../../assets/logo-white.png'
+import colors from '../../utils/style/colors'
+
+const HomeLogo = styled.img`
+  height: 40px;
+  padding-top:66px;
+`
+
+const NavContainer = styled.nav`
+  text-align:center;
+  background-color: ${colors.primary};
+  margin:0;
+`
+const CopyRight = styled.p`
+  padding: 30px;
+  align-items: center;
+  color: white;
+  margin:0;
+`
+
 function Footer() {
 
   return (
-    <div>
-      <p>© 2020 Kasa. All rights reserved</p>
-    </div>
+    <NavContainer>
+      <Link to="/">
+        <HomeLogo src={LogoWhite} />
+      </Link>
+      <div>
+        <CopyRight>© 2020 Kasa. All rights reserved</CopyRight>
+      </div>
+    </NavContainer>
   )
 }
 
