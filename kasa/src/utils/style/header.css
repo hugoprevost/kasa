@@ -1,0 +1,23 @@
+.link {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.link:hover {
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 500;
+    text-underline-offset: 10px;
+}
+
+nav .active-link {
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    text-underline-offset: 10px;
+}

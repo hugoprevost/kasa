@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { StyledLink } from '../../utils/style/Atoms'
+import '../../utils/style/header.css'
 import Logo from '../../assets/logo.png'
 
 const HomeLogo = styled.img`
@@ -21,11 +21,12 @@ function Header() {
                 <HomeLogo src={Logo} />
             </Link>
             <div>
-                <StyledLink to="/" $isFullLink>Accueil</StyledLink>
-                <StyledLink to="/apropos">A propos</StyledLink>
+                <NavLink className={({isActive}) => {return isActive ? " link active-link" : "link"}} to="/">Accueil</NavLink>
+                <NavLink className={({isActive}) => {return isActive ? " link active-link" : "link"}} to="/apropos">A propos</NavLink>
             </div>
         </NavContainer>
     )
 }
 
 export default Header
+
