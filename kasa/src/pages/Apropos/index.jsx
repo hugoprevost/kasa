@@ -1,7 +1,26 @@
-function Apropos() {
+import React from "react";
+import Banniere from "../../components/Banniere";
+import imgBanniere from "../../assets/banniere2.png";
+import Drop from "../../components/Drop";
+import DropData from "../../datas/drop.json"
+import "../../utils/style/drop.css"
+
+
+const Apropos = () => {
     return (
       <div>
-        <h1>A propos 🧮</h1>
+        <Banniere image={imgBanniere}/>
+        <div>
+          <div>
+            {DropData.map((item) => {
+              return (
+                <div key={item.id}>
+                  <Drop contenu={item.contenu} titre={item.titre} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     );
   }

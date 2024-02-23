@@ -11,7 +11,7 @@ const HomeLogo = styled.img`
 const NavContainer = styled.nav`
   text-align:center;
   background-color: ${colors.primary};
-  margin:0;
+  margin-top:50px;
 `
 const CopyRight = styled.p`
   padding: 30px;

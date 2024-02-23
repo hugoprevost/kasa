@@ -1,0 +1,50 @@
+.drop {
+    font-family: Montserrat;
+    border-radius: 5px;
+    padding: 30px 160px 0px 160px;
+    text-align: left;
+}
+
+.drop-content {
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 5px;
+    height: 25%;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.drop-titre {
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px 10px;
+    font-size: 24px;
+}
+
+.drop-chevron {
+    display: flex;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.drop-chevron.true {
+    justify-content: start;
+    transform: rotateX(-180deg);
+}
+
+.drop-description {
+    background-color: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    color: #ff6060;
+    height: auto;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+    list-style-type: none;
+}
