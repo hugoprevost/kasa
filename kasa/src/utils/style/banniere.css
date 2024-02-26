@@ -38,3 +38,18 @@
     line-height: 100%;
     color: white;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .banniere {
+        border-radius: 10px;
+        height: 111px;
+        margin-bottom: 20px;
+        position: relative;
+        margin:  0px 20px 20px 20px;
+    }
+
+    .banniere-texte{
+        top: 40%;
+        font-size: 24px;
+    }
+}

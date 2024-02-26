@@ -5,6 +5,7 @@
     border-radius: 5px;
     margin-top: 31px;
     text-align: left;
+    margin: 50px 180px 0px 180px;
 }
 
 .collapse-content {
@@ -29,7 +30,7 @@
 
 .collapse-arrow {
     display: flex;
-    margin-right: 10px;
+    margin-right: 20px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
@@ -54,6 +55,14 @@
 /* MOBILE */
 
 @media (min-width: 320px) and (max-width: 768px) {
+    .collapse {
+        font-family: Montserrat;
+        border-radius: 5px;
+        margin-top: 31px;
+        text-align: left;
+        margin: 20px 20px 0px 20px;
+    }
+
     .collapse-content {
         height: 29.93px;
     }

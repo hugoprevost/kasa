@@ -6,6 +6,7 @@ import DropData from "../../datas/drop.json"
 import "../../utils/style/drop.css"
 
 
+
 const Apropos = () => {
     return (
       <div>
