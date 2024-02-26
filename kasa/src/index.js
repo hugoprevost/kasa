@@ -6,6 +6,7 @@ import Apropos from './pages/Apropos/'
 import Header from './components/Header'
 import Error from './components/error';
 import Footer from './components/Footer';
+import Rental from "./pages/Appartement";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
+        <Route path="products/:id" element={<Rental />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer/>
@@ -21,4 +23,3 @@ ReactDOM.render(
   </React.StrictMode>,
 document.getElementById('root')
 )
-

@@ -1,30 +1,26 @@
 import React, { useState } from 'react'
 import chevron from "../../assets/chevron.svg";
 
-const Drop = ({titre, contenu}) => {
+function Drop({ titre, description }) {
     const [open, setOpen] = useState(false)
- 
-    // const display = () => {
-    //     setIsOpen(!isOpen);
-    //   };
 
     return (
-        <div className="drop" id={`drop-${titre}`} onClick={
+        <div className="collapse" id={`collapse-${titre}`} onClick={
             () => setOpen(!open)}>
-            <div className="drop-content">
-                <div className="drop-titre">{titre}</div>
+            <div className="collapse-content">
+                <div className="collapse-titre">{titre}</div>
                 <span
-                    className={`drop-chevron ${open}`}
+                    className={`collapse-arrow ${open}`}
                     onClick={() => setOpen(!open)}
                 >
-                    <img src={chevron} alt="Ouverture" />
+                    <img src={chevron} alt="Open this collapse" />
                 </span>
             </div>
             {
-                open && <div className="drop-description">{contenu}</div>
+                open && <div className="collapse-description">{description}</div>
             }
         </div >
     )
 }
 
-export default Drop
+export default Drop;

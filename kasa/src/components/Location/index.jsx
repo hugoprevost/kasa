@@ -33,7 +33,7 @@ const Gallery = () => {
       {logements.map((logement) => {
         return (
           <CardLogement key={logement.id}>
-            <Link to={`/logement/${logement.id}`}>
+            <Link to={`/products/${logement.id}`}>
               <Card image={logement.cover} title={logement.title} />
             </Link>
           </CardLogement>

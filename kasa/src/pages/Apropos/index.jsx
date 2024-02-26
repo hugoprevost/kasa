@@ -15,7 +15,7 @@ const Apropos = () => {
             {DropData.map((item) => {
               return (
                 <div key={item.id}>
-                  <Drop contenu={item.contenu} titre={item.titre} />
+                  <Drop description={item.description} titre={item.titre} />
                 </div>
               );
             })}
