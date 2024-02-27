@@ -1,0 +1,58 @@
+.header-logo{
+    height: 68px;
+}
+
+.navContainer{
+    padding: 45px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.link:hover {
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 500;
+    text-underline-offset: 10px;
+}
+
+nav .active-link {
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    text-underline-offset: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header-logo{
+        height: 36px;
+    }
+
+    .navContainer{
+        padding: 45px 20px; 
+    }
+
+    .link {
+        margin-left: 20px;
+        font-size: 15px;
+    
+    }
+    
+    .link:hover {
+        font-size: 15px;
+    }
+    
+    nav .active-link {
+        font-size: 15px;
+    }
+}

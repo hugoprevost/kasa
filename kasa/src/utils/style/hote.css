@@ -1,0 +1,41 @@
+/* DESKTOP */
+
+.host-display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.host-name {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: right;
+    margin-right: 10px;
+    color: #ff6060;
+    width: min-content;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+    .host-picture {
+        width: 32px;
+        height: 32px;
+    }
+
+    .host-display {
+        padding: 0;
+    }
+
+    .host-name {
+        font-size: 12px;
+    }
+}
