@@ -3,7 +3,7 @@ import Banniere from "../../components/Banniere";
 import imgBanniere from "../../assets/banniere2.png";
 import Drop from "../../components/Drop";
 import DropData from "../../datas/drop.json"
-import "../../utils/style/drop.css"
+import "../../utils/style/drop.scss"
 
 
 

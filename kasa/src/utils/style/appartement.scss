@@ -1,0 +1,121 @@
+@import "./variable.scss";
+.rental-display {
+    max-width: 1250px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.rental-content {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.rental-informations {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.rental-title {
+    color: $primary-color;
+    margin: 0;
+    @include text-appartement-titre;
+    @media (max-width: 768px) {
+        line-height: 26px;
+    }
+}
+
+.rental-location {
+    color: $primary-color;
+    margin-top: 0;
+    @include text-appartement-description;
+}
+
+.rental-rating-host {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    @media (max-width: 768px) {
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.rental-tags {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        margin-top: 16px;
+        width: 100%;
+        gap: 8px;
+    }
+}
+
+.rental-ratings {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3.5px;
+    @media (max-width: 768px) {
+        justify-content: flex-start;
+    }
+}
+
+.rental-description-equipments {
+    gap: 0 50px;
+    display: flex;
+    line-height: 22.5px;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.collapse {
+    font-family: Montserrat;
+    border-radius: 5px;
+    margin: 30px 0 0 0;
+    text-align: left;
+    width: 100%;
+
+}
+
+.rental-equipments>.dropdown {
+    width: 50%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.grey {
+    color: $secondary-color;
+    font-size: 30px;
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+.red {
+    color: $primary-color;
+    font-size: 30px;
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+ol {
+    padding: 0;
+}

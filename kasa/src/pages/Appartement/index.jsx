@@ -5,7 +5,7 @@ import Tags from "../../components/Tag";
 import Carrousel from "../../components/Carrousel";
 import Hote from "../../components/Hote"
 import Note from "../../components/Note";
-import "../../utils/style/appartement.css"
+import "../../utils/style/appartement.scss"
 
 
 function Rental() {

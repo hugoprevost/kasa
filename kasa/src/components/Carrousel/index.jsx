@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import leftArrow from "../../assets/leftArrow.svg";
 import rightArrow from "../../assets/rightArrow.svg";
-import "../../utils/style/carrousel.css"
+import "../../utils/style/carrousel.scss"
 
 function Carrousel({ pictures }) {
     const [current, setCurrent] = useState(0);

@@ -1,0 +1,62 @@
+@import "./variable.scss";
+
+.drop-apropos{
+    margin: 50px 180px 0px 180px;
+    @media (max-width: 768px) {
+        margin: 20px 20px 0px 20px;
+    }
+}
+
+.collapse {
+    font-family: Montserrat;
+    border-radius: 5px;
+    margin-top: 31px;
+    text-align: left;
+}
+
+.collapse-content {
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 5px;
+    height: 25%;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        height: 29.93px;
+    }
+}
+
+.collapse-titre {
+    color: $color-white; 
+    margin: 5px 10px; 
+    padding: 10px 0px;
+    @include text-drop-title;
+}
+
+.collapse-description {
+    background-color: $secondary-color;
+    border-radius: 0 0 5px 5px;
+    color: $primary-color;
+    height: auto; 
+    padding: 20px;
+    list-style-type: none;
+    @include text-drop-decription;
+    @media (max-width: 768px) {
+        margin-top: -10px;
+        padding: 24px 14px 24px 14px;
+    }
+}
+
+.collapse-arrow {
+    display: flex;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.collapse-arrow.true {
+    justify-content: start;
+    transform: rotateX(-180deg);
+}

@@ -1,9 +1,10 @@
+@import "./variable.scss";
 .erreur{
     text-align: center;
     padding-bottom: 50px;
 }
 .erreur-404{
-    color: #FF6060;
+    color: $primary-color;
     font-size: 180px;
     font-weight: 700;
     margin: 50px;
@@ -12,11 +13,11 @@
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 50px;
-    color: #FF6060;
+    color: $primary-color;
 }
 .erreur-link{
     text-decoration: underline;
-    color: black;
+    color: $color-black;
     font-size: 18px;
     font-weight: 500;
     text-underline-offset: 5px;

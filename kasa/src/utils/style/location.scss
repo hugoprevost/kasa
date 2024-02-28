@@ -1,10 +1,11 @@
+@import "./variable.scss";
 .cardWrapper{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     padding: 50px 50px 0px 50px;
     margin: 0px 100px 50px 100px;
-    background-color: #F6F6F6;
+    background-color: $secondary-color;
     border-radius: 25px;
 }
 
@@ -12,7 +13,7 @@
     width: 340px;
     height: 340px;
     bottom: 0;
-    color: white;
+    color: $color-white;
     font-size: 15px;
     font-weight:700;
     text-decoration: none;
@@ -24,7 +25,7 @@
     justify-content: space-between;
     padding: 0px;
     margin: 0px 20px 0px 20px;
-    background-color: #FFFFFF;
+    background-color: $color-white;
 }
 
 .cardLogement{

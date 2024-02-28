@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../utils/style/card.css";
+import "../../utils/style/card.scss";
 
 function Card({image, title}) {
 
@@ -7,7 +7,7 @@ function Card({image, title}) {
       <div className="card">
         <img src={image} alt={title} className="card-img"/>
         <div className="card-overlay"></div>
-        <h2 className="card-title">{title}</h2>
+        <p className="card-title">{title}</p>
       </div>
     );
 }

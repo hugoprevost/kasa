@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logements from "../../datas/index.json";
 import Card from "../Card";
-import "../../utils/style/location.css";
+import "../../utils/style/location.scss";
 
 const Gallery = () => {
   return (

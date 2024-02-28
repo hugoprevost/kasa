@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../utils/style/hote.css"
+import "../../utils/style/hote.scss"
 
 function Hote({ host }) {
     return (
