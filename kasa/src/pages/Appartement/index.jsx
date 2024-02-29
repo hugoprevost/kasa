@@ -8,7 +8,7 @@ import Note from "../../components/Note";
 import "../../utils/style/appartement.scss"
 
 
-function Rental() {
+function Location() {
     const { id } = useParams();
     const product = Products.find((product) => product.id === id);
     console.log(product)
@@ -26,41 +26,39 @@ function Rental() {
         location,
     } = product;
 
-    const equipementsRental = equipments.map((equipment, index) => {
+    const equipementsLocation = equipments.map((equipment, index) => {
         return <li key={index}>{equipment}</li>;
     });
 
     return (
         <>
-            <div className="rental-display">
+            <div className="logement">
                 <Carrousel pictures={pictures} />
-                <div className="rental-content">
-                    <div className="rental-informations">
-                        <div className="w-rental-title-location">
-                            <h1 className="rental-title">{title}</h1>
-                            <p className="rental-location">{location}</p>
+                <div className="logement__contenu">
+                    <div className="logement__information">
+                        <div>
+                            <h1 className="logement__information__titre">{title}</h1>
+                            <p className="logement__information__adresse">{location}</p>
                         </div>
-                        <div className="rental-tags">
+                        <div className="logement__information__tag">
                             {tags.map((tag, index) => (
                                 <Tags key={index} citytag={tag} />
                             ))}
                         </div>
                     </div>
-                    <div className="rental-rating-host">
+                    <div className="logement__note">
                         <Hote host={host} />
                         <Note ratingScale={rating} />
                     </div>
                 </div>
-                <div className="rental-description-equipments">
+                <div className="logement__description">
                     <Drop
-                        className="rental-description"
                         titre="Description"
                         description={description}
                     />
                     <Drop
-                        className="rental-equipment"
                         titre="Équipements"
-                        description={equipementsRental}
+                        description={equipementsLocation}
                     />
                 </div>
             </div>
@@ -68,4 +66,4 @@ function Rental() {
     );
 }
 
-export default Rental;
+export default Location;

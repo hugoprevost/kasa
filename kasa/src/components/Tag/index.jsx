@@ -3,8 +3,8 @@ import "../../utils/style/tag.scss"
 
 const Tags = ({ citytag }) => {
     return (
-        <div className="tag-city">
-            <p className="tag-city-text">{citytag}</p>
+        <div className="tag__ville">
+            <p className="tag__ville__texte">{citytag}</p>
         </div>
     );
 };

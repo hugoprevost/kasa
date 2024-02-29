@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import leftArrow from "../../assets/leftArrow.svg";
-import rightArrow from "../../assets/rightArrow.svg";
+import chevronGauche from "../../assets/leftArrow.svg";
+import chevronDroite from "../../assets/rightArrow.svg";
 import "../../utils/style/carrousel.scss"
 
 function Carrousel({ pictures }) {
@@ -20,18 +20,18 @@ function Carrousel({ pictures }) {
         <>
             {pictures.map((picture, index) =>
                 current === index && (
-                    <div key={picture} className="carrousel-pictures">
-                        <span className="carrousel-count-display">
+                    <div key={picture} className="carrousel">
+                        <span className="carrousel__compte">
                             {index + 1}/{length}
                         </span>
-                        <img src={picture} alt="Rental" />
+                        <img src={picture} alt="Bien en location" className="carrousel__img" />
                         {length > 1 ? (
                             <>
-                                <div className="carrousel-leftArrow" onClick={leftSlide}>
-                                    <img src={leftArrow} alt="Preview arrow" />
+                                <div className="carrousel__chevron--gauche" onClick={leftSlide}>
+                                    <img src={chevronGauche} alt="Précédente" className="carrousel__chevron--gauche--img" />
                                 </div>
-                                <div className="carrousel-rightArrow" onClick={rightSlide}>
-                                    <img src={rightArrow} alt="Next arrow" />
+                                <div className="carrousel__chevron--droite" onClick={rightSlide}>
+                                    <img src={chevronDroite} alt="Suivante" className="carrousel__chevron--droite--img"/>
                                 </div>
                             </>
                         ) : null}

@@ -1,0 +1,20 @@
+@import "./variable.scss";
+
+.footer__logo{
+    height: 40px;
+    padding-top:66px;
+}
+
+.footer__nav{
+    text-align:center;
+    background-color: $color-black;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.footer__description{
+    padding: 30px;
+    align-items: center;
+    color: white;
+    margin:0;
+}

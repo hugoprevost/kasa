@@ -2,24 +2,20 @@
 .erreur{
     text-align: center;
     padding-bottom: 50px;
-}
-.erreur-404{
-    color: $primary-color;
-    font-size: 180px;
-    font-weight: 700;
-    margin: 50px;
-}
-.erreur-text{
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 50px;
-    color: $primary-color;
-}
-.erreur-link{
-    text-decoration: underline;
-    color: $color-black;
-    font-size: 18px;
-    font-weight: 500;
-    text-underline-offset: 5px;
-   
+    &__404{
+        color: $primary-color;
+        margin: 50px;
+        @include text-erreur-404;
+    }
+    &__text{
+        margin-bottom: 50px;
+        color: $primary-color;
+        @include text-erreur-description;
+    }
+    &__link{
+        text-decoration: underline;
+        color: $color-black;
+        text-underline-offset: 5px;
+        @include text-erreur-link;
+    }
 }

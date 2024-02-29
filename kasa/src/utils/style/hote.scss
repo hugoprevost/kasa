@@ -1,29 +1,26 @@
 @import "./variable.scss";
 
-.host-display {
+.hote {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     @media (max-width: 768px) {
         padding: 0;
     }
-}
-
-.host-picture {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    @media (max-width: 768px) {
-        width: 32px;
-        height: 32px;
+    &__name {
+        letter-spacing: 0;
+        text-align: right;
+        margin-right: 10px;
+        color: $primary-color;
+        width: min-content;
+        @include text-appartement-host;
+        @media (max-width: 768px) {
+            margin-right: 20px;
+        }
     }
-}
-
-.host-name {
-    letter-spacing: 0;
-    text-align: right;
-    margin-right: 10px;
-    color: $primary-color;
-    width: min-content;
-    @include text-appartement-host;
+    &__picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
 }

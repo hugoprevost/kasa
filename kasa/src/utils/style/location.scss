@@ -1,5 +1,6 @@
 @import "./variable.scss";
-.cardWrapper{
+
+.card__logement{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -7,30 +8,25 @@
     margin: 0px 100px 50px 100px;
     background-color: $secondary-color;
     border-radius: 25px;
-}
-
-.cardLogement{
-    width: 340px;
-    height: 340px;
-    bottom: 0;
-    color: $color-white;
-    font-size: 15px;
-    font-weight:700;
-    text-decoration: none;
-    padding-bottom: 50px;
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-  .cardWrapper{
-    justify-content: space-between;
-    padding: 0px;
-    margin: 0px 20px 0px 20px;
-    background-color: $color-white;
-}
-
-.cardLogement{
-    width: 100%;
-    height: auto;
-    padding-bottom: 10px;
-}
+    @media (max-width: 768px) {
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px 20px 0px 20px;
+        background-color: $color-white;
+    }
+    &__article{
+        width: 340px;
+        height: 340px;
+        bottom: 0;
+        color: $color-white;
+        font-size: 15px;
+        font-weight:700;
+        text-decoration: none;
+        padding-bottom: 50px;
+        @media (max-width: 995px) {
+            width: 100%;
+            height: auto;
+            padding-bottom: 10px;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 @import "./variable.scss";
 
-.tag-city {
+.tag__ville {
     background-color: $primary-color;
     border-radius: 10px;
     color: $color-white;
@@ -16,14 +16,13 @@
         flex-direction: column;
         justify-content: space-around;
     }
-}
-
-.tag-city-text {
-    margin: 0;
-    text-align: center;
-    @include text-appartement-tag;
-    @media (max-width: 768px) {
-        justify-content: center;
-        display: flex;
+    &__texte {
+        margin: 0;
+        text-align: center;
+        @include text-appartement-tag;
+        @media (max-width: 768px) {
+            justify-content: center;
+            display: flex;
+        }
     }
 }

@@ -1,12 +1,6 @@
 @import "./variable.scss";
-.header-logo{
-    height: 68px;
-    @media (max-width: 768px) {
-        height: 36px;
-    }
-}
 
-.navContainer{
+.header{
     padding: 45px 100px;
     display: flex;
     justify-content: space-between;
@@ -14,24 +8,27 @@
     @media (max-width: 768px) {
         padding: 45px 20px; 
     }
-}
-
-.link {
-    margin-left: 40px;
-    text-decoration: none;
-    color: $color-black;
-    @include text-nav;
-    @media (max-width: 768px) {
-        margin-left: 20px;
+    &__logo{
+        height: 68px;
+        @media (max-width: 768px) {
+            height: 36px;
+        }
     }
-}
-
-.link:hover {
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-
-nav .active-link {
-    text-decoration: underline;
-    text-underline-offset: 10px;
+    &__link {
+        margin-left: 40px;
+        text-decoration: none;
+        color: $color-black;
+        @include text-nav;
+        @media (max-width: 768px) {
+            margin-left: 20px;
+        }
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+    }
+    &__active--link {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
 }

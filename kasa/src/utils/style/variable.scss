@@ -80,6 +80,33 @@ $color-black: #000000;
     font-weight: 500;
     font-size: 18px;
     @media (max-width: 768px) {
-        font-size: 12px;
+        font-size: 15px;
+    }
+}
+
+@mixin text-erreur-404 {
+    font-family: Montserrat;
+    font-size: 180px;
+    font-weight: 700;
+    @media (max-width: 768px) {
+        font-size: 90px;
+    }
+}
+
+@mixin text-erreur-description {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+@mixin text-erreur-link {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 14px;
     }
 }
