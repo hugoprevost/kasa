@@ -6,6 +6,7 @@ function Drop({ titre, description }) {
     const [open, setOpen] = useState(false)
 
     return (
+        
         <div className="collapse" id={`collapse__${titre}`} onClick={
             () => setOpen(!open)}>
             <div className="collapse__content">
@@ -18,7 +19,7 @@ function Drop({ titre, description }) {
                 </span>
             </div>
             {
-                open && <div className="collapse__description">{description}</div>
+                open && <div className={`collapse__description true`}>{description}</div>
             }
         </div >
     )

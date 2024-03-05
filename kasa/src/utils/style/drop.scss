@@ -1,6 +1,6 @@
 @import "./variable.scss";
 .collapse {
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 31px;
     text-align: left;
     &__content {
@@ -11,6 +11,8 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        border-radius: 10px;
+        transition: all 2s ease-out;
         @media (max-width: 768px) {
             height: 29.93px;
         }
@@ -27,6 +29,7 @@
                 &.true {
                     justify-content: start;
                     transform: rotateX(-180deg);
+                    
                 }
             }
         }
@@ -35,13 +38,17 @@
         background-color: $secondary-color;
         border-radius: 0 0 5px 5px;
         color: $primary-color;
-        height: auto; 
+        height: 0; 
         padding: 20px;
         list-style-type: none;
+        transition: height 0.5s;
         @include text-drop-decription;
         @media (max-width: 768px) {
             margin-top: -10px;
             padding: 24px 14px 24px 14px;
+        }
+        &.true {
+            height: auto; 
         }
     }
 }
